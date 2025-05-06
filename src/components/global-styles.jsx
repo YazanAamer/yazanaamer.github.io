@@ -176,7 +176,7 @@ export default function Index() {
       }
     `}</style>
   );
-}
+},
 
 function StoryComponent() {
   return (

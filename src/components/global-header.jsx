@@ -73,7 +73,7 @@ export default function Index() {
       </div>
     </header>
   );
-}
+},
 
 function StoryComponent() {
   return (

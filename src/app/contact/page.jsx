@@ -1,6 +1,8 @@
 "use client";
+
 import React from "react";
 import GlobalHeader from "../../components/global-header";
+import { useState, useEffect } from 'react';
 
 function MainComponent() {
   const [formData, setFormData] = useState({
