@@ -17,6 +17,7 @@ function MainComponent() {
                   src="https://ucarecdn.com/57b8154e-92f3-4fb4-a901-46954d5f0cec/-/format/auto/"
                   alt="ZENITH Logo"
                   className="h-96 w-auto"
+                  style={{ objectFit: "contain" }}
                 />
               </div>
 
