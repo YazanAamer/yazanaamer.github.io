@@ -10,17 +10,17 @@ function MainComponent() {
       desc: "Understanding your goals and vision",
     },
     {
-      icon: "far fa-pencil-ruler",
+      icon: "fas fa-pencil-ruler",
       title: "Strategy",
       desc: "Creating a tailored action plan",
     },
     {
-      icon: "far fa-code",
+      icon: "fas fa-code",
       title: "Development",
       desc: "Building innovative solutions",
     },
     {
-      icon: "far fa-rocket",
+      icon: "fas fa-rocket",
       title: "Launch",
       desc: "Deploying and optimizing results",
     },
@@ -46,7 +46,7 @@ function MainComponent() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-32">
             {[
               {
-                icon: "far fa-paint-brush",
+                icon: "fas fa-paint-brush",
                 title: "Brand Identity & Design",
                 services: [
                   "Logo/UI/UX design",
@@ -55,7 +55,7 @@ function MainComponent() {
                 ],
               },
               {
-                icon: "far fa-laptop-code",
+                icon: "fas fa-laptop",
                 title: "Technology Solutions",
                 services: [
                   "Custom app development",
@@ -64,7 +64,7 @@ function MainComponent() {
                 ],
               },
               {
-                icon: "far fa-bullhorn",
+                icon: "fas fa-bullhorn",
                 title: "Digital Marketing Mastery",
                 services: [
                   "SEO/SEM",
@@ -73,7 +73,7 @@ function MainComponent() {
                 ],
               },
               {
-                icon: "far fa-chart-line",
+                icon: "fas fa-chart-bar",
                 title: "Client Growth Optimization",
                 services: [
                   "Customer journey mapping",
@@ -82,7 +82,7 @@ function MainComponent() {
                 ],
               },
               {
-                icon: "far fa-globe",
+                icon: "fas fa-globe",
                 title: "Global Market Expansion",
                 services: [
                   "Localization",

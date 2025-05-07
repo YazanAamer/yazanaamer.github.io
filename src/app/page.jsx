@@ -225,7 +225,7 @@ function MainComponent() {
                 desc: "Strategic project planning",
               },
               {
-                icon: "paintbrush",
+                icon: "paint-brush",
                 title: "Design",
                 desc: "Creative design process",
               },
