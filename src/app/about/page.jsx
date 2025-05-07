@@ -47,7 +47,7 @@ function MainComponent() {
                 </div>
                 <div className="border-2 border-[#FD7634] rounded-2xl p-12 w-full">
                   <div className="flex items-center mb-8">
-                    <i className="far fa-bullseye text-4xl text-[#FD7634] mr-6"></i>
+                    <i className="fas fa-bullseye text-4xl text-[#FD7634] mr-6"></i>
                     <h2 className="text-4xl font-bold text-[#050517]">
                       Mission
                     </h2>
@@ -74,7 +74,7 @@ function MainComponent() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  icon: "fa-paw",
+                  icon: "fas fa-paw",
                   animal: "The Zebra",
                   name: "Inky",
                   role: "Design Maverick",
@@ -90,7 +90,7 @@ function MainComponent() {
                   desc: "Crafting data-driven strategies with unparalleled market insight",
                 },
                 {
-                  icon: "fa-feather",
+                  icon: "fas fa-feather",
                   animal: "The Eagle",
                   name: "Ace",
                   role: "Vision Director",
@@ -98,7 +98,7 @@ function MainComponent() {
                   desc: "Guiding brands to new heights with strategic excellence",
                 },
                 {
-                  icon: "fa-fire",
+                  icon: "fas fa-fire",
                   animal: "The Fox",
                   name: "Buddy",
                   role: "Innovation Lead",
@@ -152,7 +152,7 @@ function MainComponent() {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {[
                   {
-                    icon: "fa-paw",
+                    icon: "fas fa-paw",
                     title: "Creative Excellence",
                     desc: "Crafting distinctive brand experiences that captivate audiences and inspire meaningful connections.",
                   },
@@ -162,12 +162,12 @@ function MainComponent() {
                     desc: "Transforming market insights into actionable strategies that drive measurable growth and lasting impact.",
                   },
                   {
-                    icon: "fa-feather",
+                    icon: "fas fa-feather",
                     title: "Visionary Leadership",
                     desc: "Guiding brands through digital transformation with confidence and strategic foresight.",
                   },
                   {
-                    icon: "fa-fire",
+                    icon: "fas fa-fire",
                     title: "Digital Innovation",
                     desc: "Pioneering cutting-edge solutions that push boundaries and redefine industry standards.",
                   },
