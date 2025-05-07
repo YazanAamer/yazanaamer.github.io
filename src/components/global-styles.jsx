@@ -4,7 +4,10 @@ import React from "react";
 
 
 export default function Index() {
-  return (function MainComponent() {
+  <MainComponent />
+}
+
+function MainComponent() {
   const colors = {
     primary: "#FF7043",
     primaryDark: "#E64A19",
@@ -176,91 +179,90 @@ export default function Index() {
       }
     `}</style>
   );
-},
 
-function StoryComponent() {
-  return (
-    <div className="space-y-8">
-      <div>
-        <h2 className="text-lg font-bold mb-4">Global Styles</h2>
-        <div className="space-y-4">
-          <div>
-            <h3 className="text-md font-semibold mb-2">Animations</h3>
-            <div className="flex gap-4">
-              <div className="icon-float p-4 bg-[var(--color-primary)] text-[var(--color-white)] rounded">
-                Float Animation
+  function StoryComponent() {
+    return (
+      <div className="space-y-8">
+        <div>
+          <h2 className="text-lg font-bold mb-4">Global Styles</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-md font-semibold mb-2">Animations</h3>
+              <div className="flex gap-4">
+                <div className="icon-float p-4 bg-[var(--color-primary)] text-[var(--color-white)] rounded">
+                  Float Animation
+                </div>
+                <div className="icon-pulse p-4 bg-[var(--color-primary-dark)] text-[var(--color-white)] rounded">
+                  Pulse Animation
+                </div>
+                <div className="hover-scale p-4 bg-[var(--color-primary)] text-[var(--color-white)] rounded">
+                  Scale on Hover
+                </div>
               </div>
-              <div className="icon-pulse p-4 bg-[var(--color-primary-dark)] text-[var(--color-white)] rounded">
-                Pulse Animation
+            </div>
+
+            <div>
+              <h3 className="text-md font-semibold mb-2">Black Scale</h3>
+              <div className="flex gap-2">
+                {[100, 200, 300, 400, 500, 600, 700, 800, 900].map((weight) => (
+                  <div
+                    key={weight}
+                    className={`w-10 h-10 rounded bg-[var(--color-black-${weight})]`}
+                  ></div>
+                ))}
               </div>
-              <div className="hover-scale p-4 bg-[var(--color-primary)] text-[var(--color-white)] rounded">
-                Scale on Hover
+            </div>
+
+            <div>
+              <h3 className="text-md font-semibold mb-2">White Scale</h3>
+              <div className="flex gap-2 bg-[var(--color-gray-200)] p-2 rounded">
+                {[100, 200, 300, 400, 500, 600, 700, 800, 900].map((weight) => (
+                  <div
+                    key={weight}
+                    className={`w-10 h-10 rounded bg-[var(--color-white-${weight})]`}
+                  ></div>
+                ))}
               </div>
             </div>
-          </div>
 
-          <div>
-            <h3 className="text-md font-semibold mb-2">Black Scale</h3>
-            <div className="flex gap-2">
-              {[100, 200, 300, 400, 500, 600, 700, 800, 900].map((weight) => (
-                <div
-                  key={weight}
-                  className={`w-10 h-10 rounded bg-[var(--color-black-${weight})]`}
-                ></div>
-              ))}
+            <div>
+              <h3 className="text-md font-semibold mb-2">Orange Scale</h3>
+              <div className="flex gap-2">
+                {[100, 200, 300, 400, 500, 600, 700, 800, 900].map((weight) => (
+                  <div
+                    key={weight}
+                    className={`w-10 h-10 rounded bg-[var(--color-orange-${weight})]`}
+                  ></div>
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div>
-            <h3 className="text-md font-semibold mb-2">White Scale</h3>
-            <div className="flex gap-2 bg-[var(--color-gray-200)] p-2 rounded">
-              {[100, 200, 300, 400, 500, 600, 700, 800, 900].map((weight) => (
-                <div
-                  key={weight}
-                  className={`w-10 h-10 rounded bg-[var(--color-white-${weight})]`}
-                ></div>
-              ))}
+            <div>
+              <h3 className="text-md font-semibold mb-2">Gray Scale</h3>
+              <div className="flex gap-2">
+                {[100, 200, 300, 400, 500, 600, 700, 800, 900].map((weight) => (
+                  <div
+                    key={weight}
+                    className={`w-10 h-10 rounded bg-[var(--color-gray-${weight})]`}
+                  ></div>
+                ))}
+              </div>
             </div>
-          </div>
 
-          <div>
-            <h3 className="text-md font-semibold mb-2">Orange Scale</h3>
-            <div className="flex gap-2">
-              {[100, 200, 300, 400, 500, 600, 700, 800, 900].map((weight) => (
-                <div
-                  key={weight}
-                  className={`w-10 h-10 rounded bg-[var(--color-orange-${weight})]`}
-                ></div>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-md font-semibold mb-2">Gray Scale</h3>
-            <div className="flex gap-2">
-              {[100, 200, 300, 400, 500, 600, 700, 800, 900].map((weight) => (
-                <div
-                  key={weight}
-                  className={`w-10 h-10 rounded bg-[var(--color-gray-${weight})]`}
-                ></div>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h3 className="text-md font-semibold mb-2">Icons</h3>
-            <div className="flex gap-4">
-              <i className="far fa-paw text-[#fc7734] text-4xl icon-float"></i>
-              <i className="far fa-eye text-[#fc7734] text-4xl icon-float"></i>
-              <i className="far fa-feather text-[#fc7734] text-4xl icon-float"></i>
-              <i className="far fa-fire text-[#fc7734] text-4xl icon-float"></i>
-              <i className="fas fa-shield-alt text-[#fc7734] text-4xl icon-float"></i>
+            <div>
+              <h3 className="text-md font-semibold mb-2">Icons</h3>
+              <div className="flex gap-4">
+                <i className="far fa-paw text-[#fc7734] text-4xl icon-float"></i>
+                <i className="far fa-eye text-[#fc7734] text-4xl icon-float"></i>
+                <i className="far fa-feather text-[#fc7734] text-4xl icon-float"></i>
+                <i className="far fa-fire text-[#fc7734] text-4xl icon-float"></i>
+                <i className="fas fa-shield-alt text-[#fc7734] text-4xl icon-float"></i>
+              </div>
             </div>
           </div>
         </div>
+        <MainComponent />
       </div>
-      <MainComponent />
-    </div>
-  );
-});
+    );
+  }
 }

@@ -4,7 +4,13 @@ import React from "react";
 
 
 export default function Index() {
-  return (function MainComponent({ text, icon, onClick, className }) {
+  return <>
+    <MainComponent />
+    <StoryComponent />
+  </>
+}
+
+function MainComponent({ text, icon, onClick, className }) {
   return (
     <button
       onClick={onClick}
@@ -28,5 +34,4 @@ function StoryComponent() {
       <MainComponent icon="fa-shopping-cart" />
     </div>
   );
-});
 }
